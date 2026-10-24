@@ -84,7 +84,7 @@ nav {
 /* main content */
 main {
     background-color: lightblue;
-    /* make main element take up any surplus space to push footer down*/
+    /* make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
     margin-top: 47px;
 }
@@ -93,9 +93,9 @@ footer {
     background-color: orange;
 }
 
-/* media query: tablets and larger (768px and up)*/
+/* media query: tablets and larger (768px and up) */
 @media screen and (min-width:768px) {
-    /*header*/
+    /* header */
     nav {
         display: block;
         position: relative;
@@ -114,5 +114,17 @@ footer {
 
     .nav-toggle-label {
         display: none;
+    }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /* main content */
+    main {
+        /* push main content down to accommodate larger header */
+        margin-top: 79px;
     }
 }
